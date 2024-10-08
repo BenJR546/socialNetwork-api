@@ -6,15 +6,15 @@ This is a RESTful API for a social network application built using **MongoDB** a
 
 -   [Installation](#installation)
 -   [Usage](#usage)
--   [Endpoints](#endpoints)
+-   [API Endpoints](#api-endpoints)
     -   [User Routes](#user-routes)
     -   [Thought Routes](#thought-routes)
--   Models
+-   [Models](#models)
     -   [User Model](#user-model)
     -   [Thought Model](#thought-model)
--   License
--   Contributing
--   Questions
+-   [License](#license)
+-   [Contributing](#contributing)
+-   [Questions](#questions)
 
 ## Installation
 
@@ -196,7 +196,7 @@ DELETE /api/thoughts/:thoughtId/reactions/:reactionId
 -   Fields:
     -   **username**: String: Unique, required
     -   **email**: String: Unique, required, must be a valid email address
-    -   **thoughts**: Array: Arrar of **\_id** values referencing the Thought model
+    -   **thoughts**: Array: Array of **\_id** values referencing the Thought model
     -   **friends**: Array: Array of **\_id** values self-referencing the User model
 -   Virtuals:
     -   **friendCount**: Number: Returns the length of the user's friends array
